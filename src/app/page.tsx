@@ -8,6 +8,15 @@ export default function Home() {
         <p className="mb-8 text-xl text-gray-700">
           La plataforma dedicada a ayudar a las mascotas perdidas a volver a casa.
         </p>
+        <label htmlFor="search" className="sr-only">
+          Buscar Mascota
+        </label>
+        <input
+          id="search"
+          type="text"
+          placeholder="Buscar por nombre, raza o ubicación..."
+          className="mb-6 w-full rounded-lg border border-gray-300 px-4 py-3 text-lg focus:border-blue-600 focus:ring-2 focus:ring-blue-200"
+        />
         <div className="flex justify-center gap-4">
           <button className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700">
             Reportar Mascota
